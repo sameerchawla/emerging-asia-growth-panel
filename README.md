@@ -27,32 +27,23 @@ Period: 1995–2024 | Observations: 294
 | `investment` | NE.GDI.TOTL.ZS | Gross capital formation, % of GDP |
 
 ---
+### Fixed Effects Model (Preferred Specification)
 
-Here's the equation formatted for direct copy-paste into your README:
+$$
+GDP\_Growth_{it} = \alpha_i + \beta_1 Inflation_{it} + \beta_2 FDI_{it} + \beta_3 \log(Trade_{it} + 1) + \beta_4 Investment_{it} + \beta_5 Year_t + \varepsilon_{it}
+$$
 
-```
-## Fixed Effects Model (Preferred Specification)
+Where:
 
-**Model Equation:**
+- $\alpha_i$ = country-specific fixed effect  
+- $\varepsilon_{it}$ = error term  
+- $i$ indexes countries  
+- $t$ indexes time (years)
 
-$$GDP\_Growth_{it} = \alpha_i + \beta_1 Inflation_{it} + \beta_2 FDI_{it} + \beta_3 \log(Trade_{it} + 1) + \beta_4 Investment_{it} + \beta_5 Year_t + \varepsilon_{it}$$
+A linear time trend ($Year_t$) is included to control for potential non-stationarity in the trade variable (IPS test $p = 0.28$).
 
-**Where:**
+The **Fixed Effects estimator** is preferred over the **Random Effects estimator** based on the **Hausman test**, indicating that country-specific effects are correlated with the regressors.
 
-| Symbol | Description |
-|--------|-------------|
-| $\alpha_i$ | Country-specific fixed effect |
-| $\beta_1 - \beta_5$ | Estimated coefficients for each regressor |
-| $\varepsilon_{it}$ | Idiosyncratic error term |
-| $i$ | Indexes countries |
-| $t$ | Indexes time (years) |
-| $\log(Trade_{it} + 1)$ | Log-transformed trade variable (handles skewness) |
-| $Year_t$ | Linear time trend — controls for non-stationarity (IPS test p = 0.28) |
-
-> **Model Selection:** The **Fixed Effects** estimator is preferred over **Random Effects** based on the **Hausman test**, indicating country-specific effects are correlated with the regressors.
-
-
----
 
 ## Results
 
