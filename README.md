@@ -28,32 +28,20 @@ Period: 1995–2024 | Observations: 294
 
 ---
 
-## Fixed Effects Model (Preferred Specification)
+### Fixed Effects Model (Preferred Specification)
 
-The baseline panel regression estimated in this project is:
+GDP_Growth_it = α_i + β₁ Inflation_it + β₂ FDI_it + β₃ log(Trade_it + 1) + β₄ Investment_it + β₅ Year_t + ε_it
 
-$$
-GDP\_Growth_{it} = \alpha_i + \beta_1 Inflation_{it} + \beta_2 FDI_{it} + \beta_3 \log(Trade_{it} + 1) + \beta_4 Investment_{it} + \beta_5 Year_t + \varepsilon_{it}
-$$
+Where:
 
-### Definitions
+- **α_i** = country-specific fixed effect  
+- **ε_it** = error term  
+- **i** indexes countries  
+- **t** indexes time (years)
 
-- \(i\) indexes **countries**
-- \(t\) indexes **time (years)**  
-- \(GDP\_Growth_{it}\) is the **GDP growth rate** for country \(i\) at time \(t\)
-- \(Inflation_{it}\) is the **inflation rate**
-- \(FDI_{it}\) represents **foreign direct investment inflows**
-- \(Trade_{it}\) is the **trade variable**, log-transformed as \( \log(Trade_{it} + 1) \)
-- \(Investment_{it}\) represents **investment levels**
-- \(Year_t\) is a **linear time trend**
-- \(\alpha_i\) captures **country-specific fixed effects**
-- \(\varepsilon_{it}\) is the **error term**
+A **linear time trend (Year_t)** is included to control for potential non-stationarity in the trade variable (IPS test p = 0.28).
 
-### Model Choice
-
-A **linear time trend (\(Year_t\))** is included to account for potential non-stationarity in the trade variable (IPS test \(p = 0.28\)).
-
-The **Fixed Effects estimator** is preferred over the **Random Effects estimator** based on the **Hausman test**, which indicates that country-specific effects are correlated with the regressors.
+The **Fixed Effects estimator** is preferred over the **Random Effects estimator** based on the **Hausman test**, indicating that country-specific effects are correlated with the regressors.
 
 
 
