@@ -28,13 +28,34 @@ Period: 1995–2024 | Observations: 294
 
 ---
 
-## Model
+## Fixed Effects Model (Preferred Specification)
 
-**Fixed Effects (preferred)**
+The baseline panel regression estimated in this project is:
 
-$$\text{gdp\\_growth}_{it} = \alpha_i + \beta_1\, \text{inflation}_{it} + \beta_2\, \text{fdi}_{it} + \beta_3\, \log(\text{trade}_{it}+1) + \beta_4\, \text{investment}_{it} + \beta_5\, \text{year}_t + \varepsilon_{it}$$
+$$
+GDP\_Growth_{it} = \alpha_i + \beta_1 Inflation_{it} + \beta_2 FDI_{it} + \beta_3 \log(Trade_{it} + 1) + \beta_4 Investment_{it} + \beta_5 Year_t + \varepsilon_{it}
+$$
 
-$\alpha_i$ = country fixed effect. `year` added as a linear time trend to control for non-stationarity in trade (IPS p = 0.28). Fixed Effects selected over Random Effects on the basis of the Hausman test.
+### Definitions
+
+- \(i\) indexes **countries**
+- \(t\) indexes **time (years)**  
+- \(GDP\_Growth_{it}\) is the **GDP growth rate** for country \(i\) at time \(t\)
+- \(Inflation_{it}\) is the **inflation rate**
+- \(FDI_{it}\) represents **foreign direct investment inflows**
+- \(Trade_{it}\) is the **trade variable**, log-transformed as \( \log(Trade_{it} + 1) \)
+- \(Investment_{it}\) represents **investment levels**
+- \(Year_t\) is a **linear time trend**
+- \(\alpha_i\) captures **country-specific fixed effects**
+- \(\varepsilon_{it}\) is the **error term**
+
+### Model Choice
+
+A **linear time trend (\(Year_t\))** is included to account for potential non-stationarity in the trade variable (IPS test \(p = 0.28\)).
+
+The **Fixed Effects estimator** is preferred over the **Random Effects estimator** based on the **Hausman test**, which indicates that country-specific effects are correlated with the regressors.
+
+
 
 ---
 
