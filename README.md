@@ -28,21 +28,28 @@ Period: 1995–2024 | Observations: 294
 
 ---
 
-### Fixed Effects Model (Preferred Specification)
+Here's the equation formatted for direct copy-paste into your README:
 
-GDP_Growth_it = α_i + β₁ Inflation_it + β₂ FDI_it + β₃ log(Trade_it + 1) + β₄ Investment_it + β₅ Year_t + ε_it
+```
+## Fixed Effects Model (Preferred Specification)
 
-Where:
+**Model Equation:**
 
-- **α_i** = country-specific fixed effect  
-- **ε_it** = error term  
-- **i** indexes countries  
-- **t** indexes time (years)
+$$GDP\_Growth_{it} = \alpha_i + \beta_1 Inflation_{it} + \beta_2 FDI_{it} + \beta_3 \log(Trade_{it} + 1) + \beta_4 Investment_{it} + \beta_5 Year_t + \varepsilon_{it}$$
 
-A **linear time trend (Year_t)** is included to control for potential non-stationarity in the trade variable (IPS test p = 0.28).
+**Where:**
 
-The **Fixed Effects estimator** is preferred over the **Random Effects estimator** based on the **Hausman test**, indicating that country-specific effects are correlated with the regressors.
+| Symbol | Description |
+|--------|-------------|
+| $\alpha_i$ | Country-specific fixed effect |
+| $\beta_1 - \beta_5$ | Estimated coefficients for each regressor |
+| $\varepsilon_{it}$ | Idiosyncratic error term |
+| $i$ | Indexes countries |
+| $t$ | Indexes time (years) |
+| $\log(Trade_{it} + 1)$ | Log-transformed trade variable (handles skewness) |
+| $Year_t$ | Linear time trend — controls for non-stationarity (IPS test p = 0.28) |
 
+> **Model Selection:** The **Fixed Effects** estimator is preferred over **Random Effects** based on the **Hausman test**, indicating country-specific effects are correlated with the regressors.
 
 
 ---
