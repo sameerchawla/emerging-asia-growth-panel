@@ -1,6 +1,5 @@
 # =============================================================================
 # GDP GROWTH DETERMINANTS - 10 ASIAN ECONOMIES 1995-2024
-# Author: Sameer Chawla | MSc Economics, GIPE | March 2026
 # Data:   World Bank WDI
 # =============================================================================
 # HOW TO RUN:
