@@ -447,18 +447,6 @@ gdp-growth-asian-panel/
     └── table_main_results.txt         Plain-text summary table
 ```
 
-Raw data is **not committed** to the repository. It is downloaded from the World Bank WDI API each time the script is run, ensuring results always use the most current available data.
-
----
-
-## 10. Education and Skills
-
-### Academic Background
-
-| Degree | Institution | Period | Score |
-|--------|-------------|--------|-------|
-| MSc Economics | Gokhale Institute of Politics and Economics (GIPE), Pune | 2024–2026 | *(add CGPA)* |
-| *(BA / BSc — add yours)* | *(Institution)* | *(Years)* | *(Score)* |
 
 ### Relevant Coursework
 
@@ -470,27 +458,8 @@ Raw data is **not committed** to the repository. It is downloaded from the World
 | Area | Details |
 |------|---------|
 | Econometric Methods | Panel Data, Fixed/Random Effects, GMM, Cointegration, Unit Root Testing, Robust Inference, Time Series |
-| Programming | R, Python (pandas, statsmodels, numpy), Stata, EViews |
 | R Packages | `plm` `lmtest` `sandwich` `WDI` `dplyr` `knitr` `ggplot2` |
-| Other Tools | Excel, LaTeX, Git, GitHub |
 | Soft Skills | Research writing, data storytelling, peer collaboration |
-
----
-
-## 11. Relevance to CRISIL
-
-This project was developed as part of my application for a research internship at **CRISIL Limited** — India's leading analytical company providing ratings, research, risk and policy advisory services.
-
-| CRISIL Research Requirement | Demonstrated in This Project |
-|-----------------------------|------------------------------|
-| Macroeconomic and sector analysis | GDP growth determinants across 10 economies, 30 years |
-| Applied quantitative methods | Full panel data pipeline: CSD → unit roots → estimation → robust inference |
-| Working with real-world data | World Bank WDI API, 284 observations, unbalanced panel |
-| Econometric rigour | Explicit CSD testing, second-generation unit-root tests, Driscoll-Kraay SE |
-| Awareness of data limitations | Six limitations discussed in detail, including endogeneity and small N |
-| Reproducible, documented code | Single script, auto-install, live API download, clear comments |
-| Policy interpretation | Results translated into policy-relevant conclusions on inflation and FDI |
-| Academic writing standards | Full references, hypothesis testing, robustness checks |
 
 ---
 
