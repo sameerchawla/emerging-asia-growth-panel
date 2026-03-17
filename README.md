@@ -17,9 +17,7 @@
 | **Name** | Sameer Chawla |
 | **Programme** | MSc Economics |
 | **Institution** | Gokhale Institute of Politics and Economics (GIPE), Pune |
-| **Expected Graduation** | 2026 |
-| **Email** | *(add your email)* |
-| **LinkedIn** | *(add your LinkedIn)* |
+| **Expected Graduation** | 2027 |
 
 ---
 
