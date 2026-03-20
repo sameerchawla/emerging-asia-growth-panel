@@ -33,8 +33,7 @@
 8. [How to Run](#8-how-to-run)
 9. [Repository Structure](#9-repository-structure)
 10. [Education and Skills](#10-education-and-skills)
-11. [Relevance to CRISIL](#11-relevance-to-crisil)
-12. [References](#12-references)
+11. [References](#12-references)
 
 ---
 
@@ -461,7 +460,7 @@ gdp-growth-asian-panel/
 
 ---
 
-## 12. References
+## 11. References
 
 | Author(s) | Year | Work |
 |-----------|------|------|
