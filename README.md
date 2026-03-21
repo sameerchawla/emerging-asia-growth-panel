@@ -60,9 +60,7 @@ The emphasis on within-country variation distinguishes this study from cross-sec
 ### Empirical Model
 
 ```
-GDP_growth_it = α + β₁·Inflation_it + β₂·FDI_it + β₃·ΔTrade_it
-                  + β₄·Investment_it + β₅·COVID_t + β₆·GFC_t
-                  + μᵢ + εᵢₜ
+GDP_growth_it = α + β₁·Inflation_it + β₂·FDI_it + β₃·ΔTrade_it  + β₄·Investment_it + β₅·COVID_t + β₆·GFC_t  + μᵢ + εᵢₜ
 ```
 
 | Symbol | Description |
@@ -443,22 +441,6 @@ gdp-growth-asian-panel/
     ├── five_regression_tables.docx    Five formatted regression tables (Word)
     └── table_main_results.txt         Plain-text summary table
 ```
-
-
-### Relevant Coursework
-
-`Advanced Econometrics` `Macroeconomics` `Time Series Analysis` `Mathematical Economics`
-`Development Economics` `Financial Economics` `Statistics and Probability` `Panel Data Methods`
-
-### Technical Skills
-
-| Area | Details |
-|------|---------|
-| Econometric Methods | Panel Data, Fixed/Random Effects, GMM, Cointegration, Unit Root Testing, Robust Inference, Time Series |
-| R Packages | `plm` `lmtest` `sandwich` `WDI` `dplyr` `knitr` `ggplot2` |
-| Soft Skills | Research writing, data storytelling, peer collaboration |
-
----
 
 ## 11. References
 
