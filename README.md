@@ -32,8 +32,7 @@
 7. [Robustness Checks](#7-robustness-checks)
 8. [How to Run](#8-how-to-run)
 9. [Repository Structure](#9-repository-structure)
-10. [Education and Skills](#10-education-and-skills)
-11. [References](#12-references)
+10. [References](#12-references)
 
 ---
 
